@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Расчет зарплаты</title>
+</head>
+
+<body>
+    <script>
+        function calculateSalary(salary) {
+            if (salary < 100000) {
+                var oklad = salary - (salary * 0.35);
+                console.log(oklad);
+            } else {
+                var oklad = salary - (salary * 0.45);
+            }
+            return oklad;
+        }
+
+
+        do {
+            salary = prompt('Какая у тебя зарплата?', 25000);
+            alert('Оклад с вычтенными процентами ' + calculateSalary(parseInt(salary)));
+            var ok = confirm('Продолжить вычисления?');
+        } while (ok);
+    </script>
+
+</body>
+
+</html>
