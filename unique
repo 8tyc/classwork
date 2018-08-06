@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>цвет</title>
+    </head>
+    <body>
+        <div id="content">Выделим этот элемент</div>
+        <script>
+          var elem = document.getElementById('content');
+          elem.style.background = 'red';
+          alert( elem == content ); // true
+        function st() {
+        content.style.background = "black"; // один и тот же элемент
+                }
+                </script>
+            </head>
+            <body>
+            <input type=button value="меняем цвет" onclick="st()">    
+</html>
