@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .container{
+        display: flex;
+        border:1px solid black;
+        flex-direction: row;
+        justify-content: space-around;
+        height:100px;
+        align-items: flex-start;
+        color:white;
+    
+
+    }
+    .container1{
+        display: flex;
+        border:1px solid black;
+        flex-direction: row;
+        justify-content: space-between;
+        height:100px;
+        align-items: flex-end;
+        color:white;
+    
+
+    }
+    .container2{
+        display: flex;
+        border:1px solid black;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height:100px;
+        align-items: center;
+        color:white;
+    
+
+    }
+
+.child, .child1,.child2{
+    background: purple;
+    width:20%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">some text</div>
+        <div class="child">some text</div>
+        <div class="child">some text</div>
+        <div class="child">some text</div>
+    </div>
+    <div class="container1">
+        <div class="child1">some text</div>
+        <div class="child1">some text</div>
+        <div class="child1">some text</div>
+        <div class="child1">some text</div>
+    </div>
+    <div class="container2">
+        <div class="child2">some text</div>
+        <div class="child2">some text</div>
+        <div class="child2">some text</div>
+        <div class="child2">some text</div>
+    </div>
+</body>
+</html>
