@@ -18,13 +18,51 @@
         #page-footer {}
 
         .nav-link {
+            display: block;
             text-decoration: none;
+            color:#ddd;
+            box-sizing: border-box;
+            height:30px;
+
         }
+        .nav-link:hover{
+            color:orange;
+            border-bottom:4px solid orange;
+            transition: color 1s linear,border-bottom 0.5s linear;
+        }
+
 
         #logo {
             width: 40px;
             height: 40px;
-            background: green;
+            background: red;
+            animation: contract 2s linear;
+            animation-fill-mode: forwards;
+
+        }
+        #logo:hover{
+            animation: expand 2s linear;
+            animation-fill-mode: forwards;
+        }
+        @keyframes expand{
+            0%{
+                width: 40px;
+            background: red;
+            }
+            100%{
+                width:100px;
+                background: greenyellow;
+            }
+        }
+        @keyframes contract{
+            0%{
+                width: 100px;
+            background: greenyellow;
+            }
+            100%{
+                width:40px;
+                background: gold;
+            }
         }
 
         #nav-flex {
@@ -49,7 +87,7 @@
 
         .nav-item {
             padding: 1em;
-            background: red;
+
             font-family: Roboto, Arial, Helvetica, sans-serif;
         }
 
